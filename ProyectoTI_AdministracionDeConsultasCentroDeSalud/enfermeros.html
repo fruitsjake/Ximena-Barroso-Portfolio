@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styleEnfermeros.css">
+    <title>ENFERMEROS</title>
+</head>
+<body>
+
+    <img src="img/salud.png" class="avatar" alt="Avatar Image">
+<form action="ficha.php" method="post">
+    <label>
+        GENERAR FICHA:
+    </label>
+    <br>
+
+    <label>
+        FAVOR DE PROPORCIONAR CURP:
+    </label>
+    <input type="text" name="curp">
+
+    <input type="submit" value="BUSCAR">
+</form>
+
+    <br>
+    <form action="./modulos/pacienteregister" method="post">
+        <label>
+            REGISTRAR NUEVO PACIENTE:
+        </label>
+        <br>
+
+        <label>
+            CURP:
+        </label>
+        <input type="text" name="curp">
+
+        <label>
+            NOMBRE(S):
+        </label>
+        <input type="text" name="nombre">
+
+        <label>
+            APELLIDOS:
+        </label>
+        <input type="text" name="apellidos">
+
+        <label>
+            SEXO: Masculino(M), Femenino(F)
+        </label>
+        <input type="text" name="sexo">
+
+        <label>
+            Fecha de nacimiento:
+        </label>
+        <input type="date" name="fechanac">
+
+        <label>
+            EDAD:
+        </label>
+        <input type="number" name="edad">
+
+        <label>
+            ESTATURA:
+        </label>
+        <input type="text">
+
+        <label>
+            AFECCIONES:
+        </label>
+        <input type="text" name="afecciones">
+
+        <input type="submit" value="REGISTRAR">
+    </form>
+</div>
+</body>
+</html>
